@@ -2,22 +2,28 @@
     <head>
         <meta charset="utf-8">
         <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="a-favicon.ico">
     </head>
 
-    <body>
-        <hr>
-        <h1>My Contact Details</h1>
-        <p>My Email: akashmahmud207@gmail.com</p>
+    <body style="background-color: #EAF6F6">
+        <h1>Contact Me</h1>
+        <a href="https://www.akashmahmud.ml"><img class="logo" src="image/logo.png" alt="Logo" width="90"></a>
+        <p>My Email: akashmahmud2077@gmail.com</p>
         <hr>
         <br>
-        <form action="mailto:akashmahmud207@gmail.com" method="post" enctype="text/plain">
-            <label>Your Name:</label>
-            <input type="text"><br>
-            <label>Your Email:</label>
-            <input type="email"><br>
-            <label>Type your message here 👇</label><br>
+        <form name="contact" netlify>
+          <p>
+            <label>Name <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+            <label>Type your message here👇</label><br>
             <textarea row="10" cols="30"></textarea><br>
-            <input type="submit">
+          <p>
+            <button class="abtn" type="submit">Send</button>
+          </p>
         </form>
     </body>
 </html>

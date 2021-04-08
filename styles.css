@@ -9,13 +9,28 @@ body {
     text-decoration: underline;
 }
 
+.project-option{
+    position: absolute;
+    right: 200px;
+    bottom: 600px;
+    font-family: Anonymous Pro;
+}
+
+.logo{
+    position: absolute;
+    left:50px;
+    top: 1px;
+}
+
+
 a{
     color: #66BFBF;
     margin: 10px 20px;
+    text-decoration: none;
 }
 
 a:hover{
-    color: blue;
+    color: black;
 }
 
 .copyright{
@@ -102,6 +117,7 @@ hr{
     margin-left: 30px;
 }
 
+
 .top-cloud {
     position: absolute;
     right: 300px;
@@ -141,3 +157,32 @@ hr{
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+
+
+.abtn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.abtn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+

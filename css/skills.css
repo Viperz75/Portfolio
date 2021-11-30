@@ -1,0 +1,161 @@
+.simg {
+    padding-top: 3%;
+    padding-left: 5%;
+    -webkit-user-drag: none;
+    user-select: none;
+    margin-right: 0.5%;
+    width: 8%;
+}
+
+.skill-section h2 {
+    color: white;
+    font-family: Texturina;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.skills-bar {
+    padding-top: 3%;
+    margin-left: 9%;
+}
+
+.skills-bar .bar {
+    margin: 20px 0px;
+}
+
+.skills-bar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skills-bar .bar .info {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 5%;
+    font-family: Texturina;
+}
+
+.skills-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 30%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #057aff;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1.7s 1.7s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line.html span {
+    width: 80%;
+}
+
+.progress-line.javascript span {
+    width: 65%;
+}
+
+.progress-line.flutter span {
+    width: 70%;
+}
+
+.progress-line.python span {
+    width: 75%;
+}
+
+.progress-line.c span {
+    width: 60%;
+}
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 1.7s 1.7s linear forwards;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 1.7s 1.7s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after {
+    content: "80%";
+}
+
+.progress-line.javascript span::after {
+    content: "65%";
+}
+
+.progress-line.flutter span::after {
+    content: "70%";
+}
+
+.progress-line.python span::after {
+    content: "75%";
+}
+
+.progress-line.c span::after {
+    content: "60%";
+}
+
+@media screen and (max-width: 736px) {
+    .skills-bar .bar .progress-line {
+        width: 90%;
+    }
+    .skill-section h2 {
+        padding-top: 15%;
+    }
+}

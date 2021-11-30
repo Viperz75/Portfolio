@@ -1,0 +1,37 @@
+.navbar {
+    margin-top: 50px;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Texturina;
+}
+
+.navbar a {
+    transition: 1s;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff5757;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.line {
+    color: #8F8686;
+}
+
+.nlink:hover {
+    transition: 1s;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 736px) {
+    .navbar {
+        margin-top: 25px;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding-left: 3px;
+    }
+}

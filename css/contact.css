@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: BioRhyme;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.heading-text {
+    color: white;
+    margin-top: 75px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-text span {
+    color: #ff2300;
+}
+
+.heading-text,
+.heading-text span {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.heading-text span {
+    display: inline-block
+}
+
+.heading-text {
+    animation-name: heading-text;
+}
+
+a {
+    font-size: 26px;
+}
+
+.mail {
+    margin-right: 20%;
+    color: white;
+}
+
+.fa {
+    transition: 0.5s;
+    color: white;
+    margin-top: 3%;
+    margin-right: 2%;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    transition: 0.5s;
+    color: #077AE9;
+}
+
+.fa-twitter:hover {
+    transition: 0.5s;
+    color: #1DA1F2;
+}
+
+.fa-reddit:hover {
+    transition: 0.5s;
+    color: rgb(255, 69, 0);
+}
+
+@keyframes heading-text {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.form {
+    margin-top: 6%;
+}
+
+.form input {
+    margin-bottom: 1.5%;
+    font-family: FontAwesome;
+    font-weight: bold;
+    background-color: #2e2e2e;
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.btn {
+    transition: 0.8s all ease-in-out;
+    width: 40%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #161616; */
+    background-color: #2e2e2e;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.8s all ease-in-out;
+    background-color: #ff2300;
+}
+
+@media screen and (max-width: 991px) {
+    .heading-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .heading-text {
+        font-size: 38px;
+        margin-top: 35%;
+    }
+    .form {
+        margin-top: 20%;
+    }
+    .form input {
+        width: 75%;
+        margin-bottom: 6%;
+    }
+    .btn {
+        width: 75%;
+    }
+}

@@ -9,10 +9,22 @@ body {
     font-family: BioRhyme;
 }
 
-.heading img {
+
+/* .heading img {
     display: flex;
     width: 18%;
     height: 50%;
+    border-radius: 54% 72% 72% 198%;
+    margin: 4% 0 0 22%;
+    user-select: none;
+    -webkit-user-drag: none;
+    justify-content: center;
+} */
+
+.heading img {
+    display: flex;
+    width: 25%;
+    height: 40%;
     border-radius: 54% 72% 72% 198%;
     margin: 4% 0 0 22%;
     user-select: none;
@@ -63,8 +75,9 @@ body {
 
 @media screen and (max-width:736px) {
     .heading img {
-        width: 50%;
-        margin-top: 22%;
+        width: 60%;
+        margin-top: 30%;
+        margin-left: 15%;
     }
     .heading-text {
         margin-top: 10%;

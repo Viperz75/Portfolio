@@ -47,14 +47,39 @@
                         <label><input class="message"  name="message" placeholder="Message..." type="Message:"/></label>
                     </p>
                     <button class="btn">Send Message</button>
+					<p id="my-form-status"></p>
                 </form>
                 <a href="https://www.facebook.com/niazmahmud.akash.7/" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://twitter.com/Viperz75" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.reddit.com/user/Viperz75" target="_blank"><i class="fa fa-reddit"></i></a>
+                <a href="https://github.com/Viperz75" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <p class="mail"><i class="fa fa-envelope"></i>akashmahmud2077@gmail.com</p>
             </div>
         </div>
     </center>
+	
+	
+	<script>
+		var form = document.getElementById('form');
+		async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.innerHTML = "Thanks for your response. We'll be in contact with you soon!";
+                form.reset()
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
+	</script>
 </body>
 
 </html>

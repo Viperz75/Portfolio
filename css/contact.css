@@ -46,16 +46,16 @@ a {
 }
 
 .mail {
-    margin-right: 20%;
+    margin-right: 25%;
     color: white;
 }
 
-.fa {
+.fa-brands {
     transition: 0.5s;
     color: white;
     margin-top: 3%;
     margin-right: 2%;
-    font-size: 60px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -84,13 +84,12 @@ a {
     }
 }
 
-.form {
+#my-form {
     margin-top: 6%;
 }
 
-.form input {
+#my-form input {
     margin-bottom: 1.5%;
-    font-family: FontAwesome;
     font-weight: bold;
     background-color: #2e2e2e;
     width: 40%;
